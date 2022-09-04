@@ -12,10 +12,12 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    let navItems = document.querySelector('#deszmenu > ul > li > a.nav-item');
   }
 
   go(site: string): void {
     if (site === 'blogs') {
+      window.location.href = 'https://blogs.qodetribe.com';
     }
   }
 }
